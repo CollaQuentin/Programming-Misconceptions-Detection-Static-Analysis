@@ -1,4 +1,4 @@
-# NoEmptyInit
+# ObjectsMustBeNamed
 
 ## Description
 

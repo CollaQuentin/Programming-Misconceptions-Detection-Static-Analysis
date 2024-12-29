@@ -1,0 +1,4 @@
+- 1.1 : Only handle `if` statements at the start of a line, to prevent cases where "if" was written in a comment.
+- 1.2 : Replace `\s` with `[ ]` to prevent case of if statements with no condition behind.
+- 1.3 Add `elif`
+- 1.4 Add potential parentheses around the condition

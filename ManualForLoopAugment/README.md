@@ -24,4 +24,4 @@ for i in range(0, 10, -1):
 
 
 ## Source
-Kim Mens (UCLouvain)
+Full Professors of LINFO1101 (UCLouvain)

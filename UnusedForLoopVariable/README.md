@@ -30,4 +30,4 @@ for _ in range(10):
 
 ## Source
 
-Kim Mens (UCLouvain)
+Full Professors of LINFO1101 (UCLouvain)

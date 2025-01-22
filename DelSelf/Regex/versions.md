@@ -1,0 +1,2 @@
+- 1.0 : Simply look for all occurences of `del self`
+- 1.1 : Check that nothings comes after the `self`, to prevent matching cases such as `del self.head`

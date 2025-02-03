@@ -3,13 +3,6 @@ from typing import Generator, Tuple, Type, Any, List
 
 ERROR_MESSAGE = "ISR An init method should not return anything"
 
-
-def is_init_method(statement: ast.stmt):
-    return (
-        isinstance(statement, ast.FunctionDef) and
-        statement.name == '__init__'
-    )
-
 class Visitor(ast.NodeVisitor):
     def __init__(self) -> None:
         self.problems: List[Tuple[int, int]] = []

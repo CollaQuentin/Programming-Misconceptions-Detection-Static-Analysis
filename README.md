@@ -7,7 +7,7 @@ The objective is to compare different static analysis tools in their ability to 
 - **Expressiveness (Readability)** : How complicated is it to understand what the implementation does ?
 - **Expressiveness (Writability)** : How complicated is it to implement the misconception using the tool ?
 
-|| Flake8 | Regex | CodeQL |
+|(For each misconception)| Flake8 | Regex | CodeQL |
 |---|---|---|---|
 Accuracy | | | |
 Performance | | | |
@@ -29,4 +29,5 @@ Readability | | | |
 Writability | | | |
 Learning curve | | | |
 Output quality | | | |
+Setup complexity
 Usability | | | |

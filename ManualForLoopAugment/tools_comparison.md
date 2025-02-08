@@ -1,6 +1,6 @@
 || Flake8 | Regex | CodeQL |
 |---|---|---|---|
 Accuracy | | | |
-Performance | 1383.116s (23.05193min) | 97.022s (1.61704min) | 37.769s (0.62948min) |
+Performance | 1383.116s (23.05193min) | 97.022s (1.61704min) | 37.769s (0.62948min) + 421.028s (7.01713min)|
 Readability | Difficult to understand, many things are kept in memory, we're looking through many different parts of the code, and all of that makes it difficult to understand what we're looking for | Awful to read, partly because I wanted to handle any kind of iterable in the for loop signature, but also because I had to handle assignments with any operators | It may look scary but it's far from the worse implementation to read. |
 Writability | I thought I needed to implement a whole new class to keep track of the hierarchy of the AST, which clearly complicated the implementation of the checker. What would have been better to do was to work around the `self.generic_visit(node)` call.| Really annoying to write aswell, since I had to handle the indentation of the `for` loop and to detect any kind of operationrs that could change the value of the for loop target variable. | It was a little complicated to write as I was getting started with CodeQL and had to understand how ot use the `exists()` formula and the casting of variables |

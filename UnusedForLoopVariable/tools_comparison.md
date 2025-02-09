@@ -2,5 +2,5 @@
 |---|---|---|---|
 Accuracy | | | |
 Performance | 2894.936s (48.24894min) | 8.767s (0.14611min) | 19.376s (0.32293min) + 421.028s (7.01713min) |
-Readability | | | |
-Writability | | | |
+Readability | Quite a long implementation which involves a whole new class to keep track of the hierarchy of the nodes of the AST, which is not necessarily the easiest to read. | Long and complicated to read due to the multiple lookarounds and references to previous groups. | Much shorter and simpler than the other two implementations. |
+Writability | Because it was one of the first checker I made, I didn't work around the `self.generic_visit(node)` call as I should have, making the whole implementation longer and more complicated than it could have been. | Complicated to write due to the fact that it requires checking the indentation of the line where the variable is used to make sure that it is used within the for loop, while also making sure that we're not matching a random letter or substring in a function name (like `i` in `print` for example). | The implementation requires the use of `exists()` and type-casting but is still much easier to write than the two other implementations. |

@@ -1,0 +1,6 @@
+|| Flake8 | Regex | CodeQL |
+|---|---|---|---|
+Accuracy | | | |
+Performance | 2010.984s (33.51640min) | 104.250s (1.73751min) | 27.549s (0.45916min) + 499.309s (8.32181min) |
+Readability | Slightly long but repetitive, thus easy to understand | Long regex with multiple lookarounds and references to previously matched groups. | Just like the flake8 implementation, slightly long but repetitive, thus not too hard to understand. |
+Writability | Slightly annoying to implement because of the fact that a function call can be useful in many various ways (even without being stored), and looking for all expressions is not accurate enough (since a simple statement that only calls a function is considered to be an expression, but if that function returns something, the return value would be wasted). | Complicated to write, required long lookarounds, needs to find functions that return somethind **and** are wrongly used **somewhere** after. | I couldn't find a easy way to see whether a call could be considered useful, so I had to think about the different statements that could contain a useful call and check each one of them manually (like I did for the flake8 implementation). |

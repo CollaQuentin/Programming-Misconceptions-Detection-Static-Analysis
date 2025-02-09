@@ -106,7 +106,7 @@ class Visitor(ast.NodeVisitor):
                 if self.get_current_loop() == variable.loop:
                     variable.usage += 1
                 else:
-                    print(f"{variable} usage +2")
+                    # print(f"{variable} usage +2")
                     variable.usage += MIN_USAGE_REQUIRED  # If a variable is used in a loop, the misconception does not trigger
         self.generic_visit(node)
 
@@ -121,5 +121,5 @@ class Plugin:
         visitor = Visitor()
         visitor.visit(self._tree)
         for var_name, line, col in visitor.get_problems():
-            print(var_name, line, col)
+            # print(var_name, line, col)
             yield line, col, ERROR_MESSAGE.format(var_name), type(self)

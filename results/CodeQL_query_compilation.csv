@@ -1,0 +1,14 @@
+misconception,runtime
+ComparisonWithBoolLiteral,30.6
+DeferredReturn,34.2
+DelSelf,33.5
+InitCreates,41.7
+InitShouldReturn,35.4
+ManualForLoopAugment,38.4
+MapToBooleanWithTO,30.3
+MultipleValuesReturn,32.4
+NoEmptyInit,33.5
+ReturnCall,32.3
+SelfAssignable,32.4
+UnusedForLoopVariable,32.6
+WastedReturnValue,32.9

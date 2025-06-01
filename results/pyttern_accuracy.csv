@@ -1,0 +1,14 @@
+misconception,detected,tp,estimated_fn,precision,relative_recall
+DeferredReturn,10,10,19.55,1.0,0.338
+ComparisonWithBoolLiteral,9,9,3.878,1.0,0.698
+DelSelf,0,0,0.0,1.0,1.0
+IfIsLoop,2492,2492,1492.275,1.0,0.625
+InitCreates,10,10,6.813,1.0,0.595
+InitShouldReturn,19,19,8.463,1.0,0.692
+ManualForLoopAugment,32,31,13.892,0.97,0.69
+MapToBooleanWithIf,598,550,199.0,0.82,0.734
+MapToBooleanWithTO,3,3,1.0,1.0,0.75
+NoEmptyInit,5,5,12.41,1.0,0.287
+SelfAssignable,1,1,0.0,1.0,1.0
+UnusedForLoopVariable,1978,1443,77.0,0.73,0.949
+WastedReturnValue,58,58,13.05,1.0,0.816

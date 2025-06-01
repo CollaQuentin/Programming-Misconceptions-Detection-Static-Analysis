@@ -1,33 +1,26 @@
-# Common-Misconceptions
+# Misconception Detection in Python Code using Static Analysis
 
-The objective is to compare different static analysis tools in their ability to detect symptoms of misconception in students' code. For each misconception, we make a table comparing the effectiveness of each tools, using the following criterias :
+This repository contains the implementations of the various programming misconceptions that I considered in my Master's thesis *"A Comparison of Program Query Languages to Detect Python Programming Misconceptions"* (Université catholique de Louvain, 2025).
 
-- **Accuracy** (in terms of false positives/negatives)
-- **Performance** : How long does it take to analyze `x` snippets of code ?
-- **Expressiveness (Readability)** : How complicated is it to understand what the implementation does ?
-- **Expressiveness (Writability)** : How complicated is it to implement the misconception using the tool ?
+## Overview
 
-|(For each misconception)| Flake8 | Regex | CodeQL |
-|---|---|---|---|
-Accuracy | | | |
-Performance | | | |
-Readability | | | |
-Writability | | | |
+The goal of this thesis is to explore how static analysis tools can be used to detect common programming misconceptions in students' Python code, and to compare various tools available for such a task.
 
-Finally, we'll compare each tools in a more "general" approach by condensing the observations from all the tables into a final one. We'll be adding a few criterias that cannot really be explored for each misconception :
+The tools used in this project focus on identifying **symptoms** of misconceptions, which are code patterns that often arise from misunderstandings of programming concepts, even when the output of the program appears correct.
 
-- **Learning curve**
-- **Output quality**
-- **Setup complexity**
-- **Usability** : Are there many symptoms that cannot be detected by the tool ?
+## Content
 
-|| Flake8 | Regex | CodeQL |
-|---|---|---|---|
-Accuracy | | | |
-Performance | | | |
-Readability | | | |
-Writability | | | |
-Learning curve | | | |
-Output quality | | | |
-Setup complexity
-Usability | | | |
+Each programming misconception has its own repository, containing a short definition of what it consists of and the different implementations used to detect it.
+
+Performance and Accuracy measures are also available in `results/`.
+
+## Tools Used
+
+- [Flake8](https://flake8.pycqa.org/)
+- [Regex](https://docs.python.org/3/library/re.html)
+- [CodeQL](https://codeql.github.com/)
+- [Pyttern](https://github.com/JulienLie/Pyttern)
+
+## Misconception Classification
+
+A classification of misconceptions gathered from various sources is also present in `Misconception_Classification.xlsx`.

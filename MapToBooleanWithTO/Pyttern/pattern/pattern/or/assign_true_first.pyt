@@ -1,0 +1,2 @@
+?:*
+    ? = True if ? else False

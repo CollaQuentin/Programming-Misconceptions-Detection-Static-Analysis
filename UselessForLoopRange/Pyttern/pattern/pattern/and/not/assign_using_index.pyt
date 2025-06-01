@@ -1,0 +1,3 @@
+for ?idx in range(len(?)):
+    ?:*
+        ?[?idx] = ?
